@@ -1,0 +1,235 @@
+@media (max-width: 1050px) {
+  .hero__grid {
+    gap: 35px;
+  }
+  .hero__visual > img {
+    height: 480px;
+  }
+  .metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .event-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer__grid {
+    grid-template-columns: 1.4fr 1fr 1fr;
+  }
+  .footer__grid > div:last-child {
+    grid-column: 1/-1;
+  }
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  .event-row {
+    grid-template-columns: 52px 1.5fr 1fr 90px;
+  }
+  .event-row > button {
+    display: none;
+  }
+}
+@media (max-width: 820px) {
+  .menu {
+    display: block;
+  }
+  .nav {
+    display: none;
+    position: absolute;
+    top: 78px;
+    left: 0;
+    right: 0;
+    padding: 25px;
+    background: var(--ink);
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .nav--open {
+    display: flex;
+  }
+  .nav > a:not(.button) {
+    padding: 8px;
+  }
+  .hero {
+    padding: 140px 0 80px;
+  }
+  .hero__grid,
+  .organizer-band .container,
+  .event-hero .container,
+  .event-content,
+  .checkout {
+    grid-template-columns: 1fr;
+  }
+  .hero__visual {
+    max-width: 620px;
+  }
+  .organizer-band .container {
+    gap: 55px;
+  }
+  .event-hero__image {
+    order: 2;
+  }
+  .event-content {
+    gap: 35px;
+  }
+  .ticket-panel,
+  .order-card {
+    position: static;
+  }
+  .dashboard-layout {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    position: static;
+    flex-direction: row;
+    overflow: auto;
+    padding: 0;
+  }
+  .sidebar > span {
+    display: none;
+  }
+  .sidebar a {
+    white-space: nowrap;
+  }
+  .digital-ticket {
+    grid-template-columns: 190px 1fr;
+  }
+  .qr {
+    grid-column: 1/-1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 16px;
+    border-left: 0;
+    border-top: 2px dashed var(--line);
+  }
+  .qr svg {
+    width: 50px;
+    height: 50px;
+  }
+  .review-card {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 620px) {
+  .container {
+    width: min(100% - 28px, 1200px);
+  }
+  .section {
+    padding: 70px 0;
+  }
+  .page {
+    padding-top: 120px;
+  }
+  h1 {
+    font-size: 3.6rem;
+  }
+  h2 {
+    font-size: 2.8rem;
+  }
+  .hero__copy h1 {
+    font-size: 3.8rem;
+  }
+  .hero__actions,
+  .hero__proof {
+    flex-wrap: wrap;
+  }
+  .hero__visual > img {
+    height: 390px;
+    border-radius: 70px 10px;
+  }
+  .float-card--top {
+    left: -5px;
+  }
+  .float-card--bottom {
+    right: -5px;
+  }
+  .logo-strip .container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .logo-strip b:nth-last-child(-n + 2) {
+    display: none;
+  }
+  .section-header {
+    display: block;
+  }
+  .event-grid {
+    grid-template-columns: 1fr;
+  }
+  .feature-list {
+    grid-template-columns: 1fr;
+  }
+  .filters > label {
+    width: 100%;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .event-hero {
+    padding-top: 120px;
+  }
+  .event-hero__image img {
+    height: 330px;
+  }
+  .event-meta {
+    grid-template-columns: 1fr;
+  }
+  .event-content article h2 {
+    font-size: 2.8rem;
+  }
+  .field-row {
+    grid-template-columns: 1fr;
+  }
+  .checkout form {
+    padding: 22px;
+  }
+  .ticket-select {
+    align-items: flex-start;
+    gap: 14px;
+    flex-direction: column;
+  }
+  .digital-ticket {
+    grid-template-columns: 1fr;
+  }
+  .digital-ticket > img {
+    height: 210px;
+  }
+  .metrics,
+  .attendee-stats {
+    grid-template-columns: 1fr;
+  }
+  .dashboard-head,
+  .create-head {
+    align-items: flex-start;
+    gap: 15px;
+    flex-direction: column;
+  }
+  .create-head > div:last-child {
+    width: 100%;
+  }
+  .event-table {
+    overflow: auto;
+  }
+  .event-row {
+    min-width: 650px;
+  }
+  .attendee-card {
+    padding: 12px;
+    overflow: auto;
+  }
+  .attendee-tools {
+    width: 700px;
+  }
+  .attendee-row {
+    width: 700px;
+  }
+  .footer__grid {
+    grid-template-columns: 1fr;
+  }
+  .footer__grid > div:last-child {
+    grid-column: auto;
+  }
+  .footer__bottom {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
